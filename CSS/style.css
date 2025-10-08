@@ -1,29 +1,43 @@
 .nav {
-    list-style-type: none;
-    background-color: rgba(0, 0, 255, 0.688);
+    list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    background: linear-gradient(90deg, #0b3d91 0%, #16478b 100%); /* deep blue */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    animation: colorShift 14s ease-in-out infinite;
 }
-ul.nav li {
-    float: left
+.nav li {
+    margin: 0;
 }
-ul.nav li a {
-    display: block;
-    padding: 8px 16px;
-    color: gold;
+.nav a {
+    display: inline-block;
+    padding: 10px 16px;
+    color: #f3d34a; /* gold */
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.nav a:hover,
+.nav a:focus {
+    background-color: rgba(243,211,74,0.12);
+    color: #fff;
+}
+.nav .brand {
     font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-right: auto;
 }
-ul.nav a:hover {
-    background-color: rgba(255, 217, 0, 0.592);
-    color: lightblue;
-}
-
 @keyframes colorShift {
-  0%, 100% { filter: brightness(.95) saturate(1.4) hue-rotate(0deg); }
-  33%      { filter: brightness(1.10) saturate(1.7) hue-rotate(18deg); }
-  66%      { filter: brightness(1.00) saturate(1.5) hue-rotate(-12deg); }
+  0%, 100% { filter: brightness(1.00) saturate(1.4) hue-rotate(0deg); }
+  33%      { filter: brightness(0.90) saturate(1.7) hue-rotate(-18deg); }
+  66%      { filter: brightness(0.95) saturate(1.5) hue-rotate(-30deg); }
+  90%   {filter: brightness(1.00) saturate(1.6) hue-rotate(-50deg);}
 }
 
 .logo {
@@ -34,12 +48,14 @@ ul.nav a:hover {
 .grid-container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto ;
+
 }
 .grid-item {
 
     padding: 10px;
     text-align: center;
+
 }
 
 .grid-item p {
@@ -55,14 +71,7 @@ ul.nav a:hover {
     grid-row: 1;
     grid-column: 3;
 }
-.img3{
-    grid-row: 1;
-    grid-column: 4;
-}
-.img4{
-    grid-row: 1;
-    grid-column: 5;
-}
+
 
 
 .img5{
@@ -114,4 +123,10 @@ body{
   background-color: rgba(21, 0, 255, 0.161);
   color: white;
   text-align: center;
+}
+
+.img_in_grid {
+ width: 100%;  
+  height: auto;  
+  display: block;
 }
