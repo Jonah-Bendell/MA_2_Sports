@@ -1,5 +1,6 @@
 .nav {
-    list-style: none;
+    list-style-type: none;
+    background-color: black;
     margin: 0;
     padding: 0;
     background: linear-gradient(90deg, #0b3d91 0%, #16478b 100%); /* deep blue */
@@ -16,18 +17,8 @@
 .nav a {
     display: inline-block;
     padding: 10px 16px;
-    color: #f3d34a; 
+    color: #f3d34a; /* gold */
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 6px;
-}
-.nav a:hover,
-.nav a:focus {
-    background-color: rgba(243,211,74,0.12);
-    color: #fff;
-}
-.nav .brand {
     font-size: 20px;
     font-weight: 700;
     color: #fff;
@@ -36,9 +27,8 @@
 @keyframes colorShift {
   0%, 100% { filter: brightness(1.00) saturate(1.4) hue-rotate(0deg); }
   33%      { filter: brightness(0.90) saturate(1.7) hue-rotate(-18deg); }
-  66% { background-color: #f3d34a;}
   66%      { filter: brightness(0.95) saturate(1.5) hue-rotate(-30deg); }
-  90%       {filter: brightness(1.00) saturate(1.6) hue-rotate();}
+  90%   {filter: brightness(1.00) saturate(1.6) hue-rotate(-50deg);}
 }
 
 .logo {
@@ -59,32 +49,28 @@
 
     padding: 0;
     text-align: center;
-
 }
 
-.grid-item p {
-  margin: 8px 0 0;           
-  font-size: 0.95rem;
-}
 
-.img1{
-    grid-row: 1;
-    grid-column: 2;
+.main-1 {
+    grid-row: 3 ;
+    grid-column: 1 / span 2;
 }
-.img2{
-    grid-row: 1;
-    grid-column: 3;
+.main-2 {
+    grid-row: 5;
+    grid-column: 1 / span 2;
 }
 
 
 
-.img3{
+.img5{
     grid-row: 2;
-    grid-column: 2;
+    grid-column: 1 / span 3;
 }
-.img4{
+.img6{
     grid-row: 2;
     grid-column: 3;
+    background-color: maroon;
 }
 .img5{
     grid-row: 3;
