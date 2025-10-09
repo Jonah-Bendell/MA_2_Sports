@@ -16,7 +16,7 @@
 .nav a {
     display: inline-block;
     padding: 10px 16px;
-    color: #f3d34a; /* gold */
+    color: #f3d34a; 
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -36,8 +36,9 @@
 @keyframes colorShift {
   0%, 100% { filter: brightness(1.00) saturate(1.4) hue-rotate(0deg); }
   33%      { filter: brightness(0.90) saturate(1.7) hue-rotate(-18deg); }
+  66% { background-color: #f3d34a;}
   66%      { filter: brightness(0.95) saturate(1.5) hue-rotate(-30deg); }
-  90%   {filter: brightness(1.00) saturate(1.6) hue-rotate(-50deg);}
+  90%       {filter: brightness(1.00) saturate(1.6) hue-rotate();}
 }
 
 .logo {
@@ -74,11 +75,11 @@
 
 
 
-.img5{
+.img3{
     grid-row: 2;
     grid-column: 2;
 }
-.img6{
+.img4{
     grid-row: 2;
     grid-column: 3;
 }
