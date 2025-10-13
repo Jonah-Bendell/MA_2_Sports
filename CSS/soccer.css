@@ -1,0 +1,101 @@
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-item {
+    background-color: rgb(235, 234, 234);
+    text-align: center;
+    padding: 20px;
+}
+
+.nav-menu {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+}
+
+.main1 {
+    grid-row: 3;
+    grid-column: 2;
+    font-size: 50px;
+    border-radius: 10%;
+    width: 500px;
+    font-weight: bold;
+    justify-self: center;
+    color: black;
+    /* centers horizontally in the grid cell */
+}
+
+
+.main2 {
+    grid-row: 6;
+    grid-column: 1 / -1;
+    /*New feature learned: using -1 to span the whole grid*/
+    margin: 0 100px;
+    /* 100px buffer on left and right */
+    background-color: darkgray;
+}
+
+.sidecontent {
+    grid-row: 7;
+    grid-column: 3;
+    color: white;
+    background-color: rgb(66, 66, 66);
+    text-align: left;
+}
+
+
+.main-img {
+    grid-row: 2;
+    grid-column: 1 / span 3;
+    border: 20px solid lightgray;
+    box-sizing: border-box;
+}
+
+.support1 {
+    grid-row: 4;
+    grid-column: 1;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.support2 {
+    grid-row: 4;
+    grid-column: 2;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.video-container {
+    grid-row: 7;
+    /* row right under main2 */
+    grid-column: 1;
+    /* only middle column */
+    justify-self: center;
+    /* centers the video in that column */
+}
+
+.video-container iframe {
+    width: 500px;
+    /* or same as main2 width */
+    aspect-ratio: 16/9;
+    /* maintain ratio */
+}
+
+.my-gif {
+    grid-row: 7;
+    grid-column: 2;
+    justify-self: center;
+    /* centers GIF in its cell */
+    align-self: center;
+    /* vertically aligns with video and sidecontent */
+    border-radius: 8px;
+    width: 500px;
+}
