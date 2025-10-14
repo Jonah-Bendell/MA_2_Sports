@@ -7,8 +7,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 20px;
+  padding: 10px ;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
 }
 
@@ -18,7 +20,7 @@
 
 .nav a {
   display: inline-block;
-  padding: 10px 16px;
+  padding: 10px;
   color: #f3d34a;
   text-decoration: none;
   font-size: 20px;
@@ -43,7 +45,7 @@
 .nav a.active {
   background-color: rgba(243, 211, 74, 0.25);
   color: #06122b;
-  /* darker text for contrast */
+
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
