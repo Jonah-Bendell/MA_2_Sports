@@ -43,7 +43,7 @@
 .nav a.active {
   background-color: rgba(243, 211, 74, 0.25);
   color: #06122b;
-  /* darker text for contrast */
+
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
