@@ -15,7 +15,7 @@
 .nav a {
     display: inline-block;
     padding: 10px 16px;
-    color: #f3d34a; /* gold */
+    color: #f3d34a; 
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -33,7 +33,7 @@
     margin-right: auto;
 }
 
-/* Responsive: stack on small screens */
+
 @media (max-width: 600px) {
     .nav {
         flex-direction: column;
@@ -55,6 +55,28 @@
     background-color: lightblue;
     padding: 10px;
     text-align: center;
+}
+
+
+.image-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    padding: 12px;
+}
+.image-list img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 420px) {
+    .image-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 
