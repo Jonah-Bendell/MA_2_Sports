@@ -4,34 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basketball</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
-       <ul class="nav">
-        <li class="brand">EPS Sports</li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="track.html">Track</a></li>
-        <li><a href="soccer.html">Soccer</a></li>
-        <li><a href="basketball.html">Basketball</a></li>
-        <li><a href="golf.html">Golf</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="volleyball.html">Volleyball</a></li>
-    </ul>
+       <div class="grid-container">
+        <div class="nav-menu grid-item">
+            <ul class="nav">
+                <li class="brand">EPS Sports </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="basketball.html" class="active">Basketball</a></li>
+                <li><a href="track.html">Track</a></li>
+                <li><a href="soccer.html">Soccer</a></li>
+                <li><a href="golf.html">Golf</a></li>
+                <li><a href="volleyball.html">Volleyball</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
 
-    <h1>EPS basketball team</h1>
+            </ul>
 
-    <li><img src="images/basketball pic.jfif"></li>
+        </div>
 
-    <p>
-    The EPS basketball team is recognized for its exceptional skill, unity, 
-    and dedication to the sport.
-     Each season, the players work hard to improve both individually and as a team,
-      resulting in strong performances and memorable victories. 
-     Their commitment to training and 
-     their positive attitude on and off the court have 
-     earned them respect from opponents and admiration from the school community. 
-     The team’s passion for basketball and their supportive team culture
-      make them a standout group at Eastside Preparatory School.
-    </p>
+    </div>
+
+    <main>
+        <h1>EPS Basketball Team</h1>
+
+        <section class="image-row" aria-label="Basketball photos">
+            <img src="images/basketball pic.jfif" alt="EPS basketball team photo" class="team-photo">
+            <img src="images/EPS Basketball schedule.png" alt="Basketball action photo" class="team-photo">
+        </section>
+
+        <section class="about">
+            <p>
+                EPS Basketball combines strong coaching and teamwork to help players develop skills, have a good culture, and represent
+                the school with pride. Being the only winter sport Basketball is able to bring the school together and 
+                make up for not having any other sports during that time.
+            </p>
+        </section>
+    </main>
 </body>
 </html> 
