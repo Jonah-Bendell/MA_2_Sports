@@ -6,33 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/volleyball.css">
 
 </head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .grid-item {
+        background-color: rgb(235, 234, 234);
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main1 {
+        grid-row: 3;
+        grid-column: 1 / span 2;
+        font-size: 50px;
+        border-radius: 10%;
+        width: 500px;
+        font-weight: bold;
+        justify-self: center;
+        color: black;
+        /* centers horizontally in the grid cell */
+    }
+
+
+    .main2 {
+        grid-row: 4;
+        grid-column: 1 / -1;
+        /*New feature learned: using -1 to span the whole grid*/
+        margin: 0 100px;
+        /* 100px buffer on left and right */
+        background-color: darkgray;
+    }
+
+    .sidecontent {
+        grid-row: 5;
+        grid-column: 2;
+        font-size: 25px;
+        color: white;
+        background-color: rgb(66, 66, 66);
+        text-align: left;
+    }
+
+
+    .main-img {
+        grid-row: 5;
+        grid-column: 1;
+        border: 20px solid lightgray;
+        box-sizing: border-box;
+    }
+
+    .support1 {
+        grid-row: 4;
+        grid-column: 1;
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .support2 {
+        grid-row: 4;
+        grid-column: 2;
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    .video-container {
+        grid-row: 7;
+        /* row right under main2 */
+        grid-column: 1;
+        /* only middle column */
+        justify-self: center;
+        /* centers the video in that column */
+    }
+
+    .video-container iframe {
+        width: 500px;
+        /* or same as main2 width */
+        aspect-ratio: 16/9;
+        /* maintain ratio */
+    }
+
+    .my-gif {
+        grid-row: 7;
+        grid-column: 2;
+        justify-self: center;
+        /* centers GIF in its cell */
+        align-self: center;
+        /* vertically aligns with video and sidecontent */
+        border-radius: 8px;
+        width: 500px;
+    }
+</style>
 
 <body>
-    <div class="grid-container">
-        <div class="nav-menu grid-item">
-            <ul class="nav">
-                <li class="brand">EPS Sports </li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="basketball.html">Basketball</a></li>
-                <li><a href="golf.html">Golf</a></li>
-                <li><a href="soccer.html">Soccer</a></li>
-                <li><a href="track.html">Track</a></li>
-                <li><a href="volleyball.html">Volleyball</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+    <div class="nav-menu">
+        <ul class="nav">
+            <li class="brand">EPS Sports </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="basketball.html">Basketball</a></li>
+            <li><a href="golf.html">Golf</a></li>
+            <li><a href="soccer.html">Soccer</a></li>
+            <li><a href="track.html">Track</a></li>
+            <li><a href="volleyball.html">Volleyball</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
 
-            </ul>
-
-        </div>
+        </ul>
 
     </div>
+    <div class="grid-container">
 
-    <h1>
-        Volleyball
-    </h1>
-    <h2> It's a sport offered at EPS</h2>
 
+        <div class="grid-item main1">Volleyball</div>
+
+        <div class="grid-item main-img">
+            <img src="images/volleyball.png" width="550">
+        </div>
+
+        <div class="grid-item main2">
+            Volleyball at EPS is one of the most energetic and community-driven sports on campus. Players of all levels
+            come together to build teamwork, communication, and resilience both on and off the court. Practices focus on
+            developing strong fundamentals—serving, passing, setting, hitting, and defensive positioning—while also
+            emphasizing sportsmanship and mutual support. During games, the gym fills with excitement as teammates
+            encourage one another through every rally, creating an atmosphere of unity and school spirit. Whether
+            competing in league matches or scrimmaging during practice, EPS volleyball fosters confidence, dedication,
+            and friendships that extend far beyond the season.
+        </div>
+
+        <div class="grid-item sidecontent">
+            What are some things you can do to help support volleyball at EPS?
+            <ul>
+                <li>Show up to and support volleyball games!</li>
+                <li>Raise awareness by posting stories at games or reposting existing stories</li>
+                <li>Join EPS volleyball and be a part of the community</li>
+                <li>Participate in EPS fundraisers to help fund athletics</li>
+                <li>Buy atheltic merch and bring posters</li>
+            </ul>
+        </div>
+
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGUxdmM5Y3Z3YjNkNXZtbXk4c3A5bXBveG10N2xlc2l4cDJzOGUxdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0G17Fp1jdq62ZltK/giphy.gif"
+            alt="Description of GIF" class="grid-item my-gif">
+
+        <div class="video-container grid-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6xNeOB0m8Ek?si=49-xLqIwV0cObCGs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <h1>&nbsp</h1>
     <div class="footer">
         <p>Alyssa</p>
     </div>
